@@ -1,8 +1,6 @@
 package funsets
 
-import org.scalatest.FunSuite
-
-
+import org.scalatest.{FunSuite, Ignore}
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
@@ -86,6 +84,7 @@ class FunSetSuite extends FunSuite {
    * Once you finish your implementation of "singletonSet", exchange the
    * function "ignore" by "test".
    */
+
   test("singletonSet(1) contains 1") {
 
     /**
