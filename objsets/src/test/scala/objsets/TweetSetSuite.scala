@@ -1,21 +1,26 @@
 package objsets
 
-import org.scalatest.FunSuite
-
-
 import org.junit.runner.RunWith
+import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner
 
 @RunWith(classOf[JUnitRunner])
 class TweetSetSuite extends FunSuite {
+
   trait TestSets {
     val set1 = new Empty
-    val set2 = set1.incl(new Tweet("a", "a body", 20)) //a
-    val set3 = set2.incl(new Tweet("b", "b body", 20)) // a, b
-    val c = new Tweet("c", "c body", 7) // c
-    val d = new Tweet("d", "d body", 9) // d
-    val set4c = set3.incl(c) // a,b,c
-    val set4d = set3.incl(d) // a,b,d
+    val set2 = set1.incl(new Tweet("a", "a body", 20))
+    //a
+    val set3 = set2.incl(new Tweet("b", "b body", 20))
+    // a, b
+    val c = new Tweet("c", "c body", 7)
+    // c
+    val d = new Tweet("d", "d body", 9)
+    // d
+    val set4c = set3.incl(c)
+    // a,b,c
+    val set4d = set3.incl(d)
+    // a,b,d
     val set5 = set4c.incl(d) //a,b,c,d
   }
 
@@ -71,4 +76,5 @@ class TweetSetSuite extends FunSuite {
     }
   }
 
-  }
+
+}
