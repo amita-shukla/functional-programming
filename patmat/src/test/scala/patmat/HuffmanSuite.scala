@@ -33,6 +33,11 @@ class HuffmanSuite extends FunSuite {
     assert(string2Chars("hello, world") === List('h', 'e', 'l', 'l', 'o', ',', ' ', 'w', 'o', 'r', 'l', 'd'))
   }
 
+  //checking the size coz the order doesn't matter
+  test("test times"){
+    assert(times(List('a','b','a','d','b')).size === List(('a',2),('b',2),('d',1)).size)
+  }
+
 
   test("makeOrderedLeafList for some frequency table") {
     assert(makeOrderedLeafList(List(('t', 2), ('e', 1), ('x', 3))) === List(Leaf('e',1), Leaf('t',2), Leaf('x',3)))
