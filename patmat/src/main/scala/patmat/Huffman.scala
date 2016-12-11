@@ -28,12 +28,12 @@ object Huffman {
   // Part 1: Basics
   def weight(tree: CodeTree): Int = tree match {
     case Leaf(char, weight) => weight
-    case Fork(left,right,chars,w) => weight(left) + weight(right)
+    case Fork(left, right, chars, w) => weight(left) + weight(right)
   } // tree match ...
 
   def chars(tree: CodeTree): List[Char] = tree match {
-    case Leaf(char,weight) => List(char)
-    case Fork(left,right,charlist,weight) => chars(left) ::: chars(right)
+    case Leaf(char, weight) => List(char)
+    case Fork(left, right, charlist, weight) => chars(left) ::: chars(right)
   }
 
   def makeCodeTree(left: CodeTree, right: CodeTree) =
@@ -78,7 +78,7 @@ object Huffman {
     */
   def times(chars: List[Char]): List[(Char, Int)] = {
 
-    val list1 : Map[Char,List[Char]]= chars.groupBy(f=>f)
+    val list1: Map[Char, List[Char]] = chars.groupBy(f => f)
     val list2 = List(list1.mapValues(_.size))
     val timesList = list2.flatten
     timesList
@@ -91,26 +91,26 @@ object Huffman {
     * head of the list should have the smallest weight), where the weight
     * of a leaf is the frequency of the character.
     */
-  
-  def makeOrderedLeafList(freqs : List[(Char,Int)]) : List[Leaf] = {
-    val leafList : List[Leaf] = freqs.map(pair => Leaf(pair._1,pair._2))
+
+  def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = {
+    val leafList: List[Leaf] = freqs.map(pair => Leaf(pair._1, pair._2))
     isort(leafList)
   }
 
-  def isort(leafList : List[Leaf]) : List[Leaf] = leafList match {
+  def isort(leafList: List[Leaf]): List[Leaf] = leafList match {
     case List() => List()
     case head :: tail => insert(head, isort(tail))
   }
 
-  def insert(head : Leaf, tail : List[Leaf]) : List[Leaf] = tail match {
+  def insert(head: Leaf, tail: List[Leaf]): List[Leaf] = tail match {
     case List() => List(head)
-    case headOfTail :: tailOfTail => if(head.weight <= headOfTail.weight) head :: tail else headOfTail :: insert(head,tailOfTail)
+    case headOfTail :: tailOfTail => if (head.weight <= headOfTail.weight) head :: tail else headOfTail :: insert(head, tailOfTail)
   }
 
   /**
     * Checks whether the list `trees` contains only one single code tree.
     */
-  def singleton(trees: List[CodeTree]): Boolean = ???
+  def singleton(trees: List[CodeTree]): Boolean = trees.size == 1
 
   /**
     * The parameter `trees` of this function is a list of code trees ordered
@@ -124,7 +124,22 @@ object Huffman {
     * If `trees` is a list of less than two elements, that list should be returned
     * unchanged.
     */
-  def combine(trees: List[CodeTree]): List[CodeTree] = ???
+  def combine(trees: List[CodeTree]): List[CodeTree] = {
+    if (trees.size <= 2)
+      return trees
+    //    trees.foreach(x =>
+    //      println(weight(x)))
+    //    println("tree1 : "+weight(trees.head))
+    //    println("tree2 : "+weight(trees.tail.head))
+    val fork: Fork = makeCodeTree(trees.head, trees.tail.head)
+    val newList: List[CodeTree] = trees.drop(2)
+    //    println("new List : " + newList)
+    //    println("fork : " + fork)
+    val finalList: List[CodeTree] = fork :: newList
+    //println("finalList : "+ finalList)
+    finalList
+  }
+
 
   /**
     * This function will be called in the following way:
