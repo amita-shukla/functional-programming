@@ -91,7 +91,21 @@ object Huffman {
     * head of the list should have the smallest weight), where the weight
     * of a leaf is the frequency of the character.
     */
-  def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = ???
+  
+  def makeOrderedLeafList(freqs : List[(Char,Int)]) : List[Leaf] = {
+    val leafList : List[Leaf] = freqs.map(pair => Leaf(pair._1,pair._2))
+    isort(leafList)
+  }
+
+  def isort(leafList : List[Leaf]) : List[Leaf] = leafList match {
+    case List() => List()
+    case head :: tail => insert(head, isort(tail))
+  }
+
+  def insert(head : Leaf, tail : List[Leaf]) : List[Leaf] = tail match {
+    case List() => List(head)
+    case headOfTail :: tailOfTail => if(head.weight <= headOfTail.weight) head :: tail else headOfTail :: insert(head,tailOfTail)
+  }
 
   /**
     * Checks whether the list `trees` contains only one single code tree.
