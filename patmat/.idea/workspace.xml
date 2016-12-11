@@ -29,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Huffman.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Huffman.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="173" column="12" selection-start-line="173" selection-start-column="12" selection-end-line="173" selection-end-column="12" />
+            <state relative-caret-position="102">
+              <caret line="188" column="112" selection-start-line="188" selection-start-column="112" selection-end-line="188" selection-end-column="112" />
               <folding />
             </state>
           </provider>
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HuffmanSuite.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HuffmanSuite.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="368">
+              <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -129,21 +129,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="ScalaTest.HuffmanSuite.combine of some leaf list">
-    <configuration default="false" name="HuffmanSuite.chars of a larger tree" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="root" />
-      <setting name="path" value="patmat.HuffmanSuite" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="chars of a larger tree" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="ScalaTest.HuffmanSuite.decode testing">
     <configuration default="false" name="HuffmanSuite.string2chars(&quot;hello, world&quot;)" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="root" />
       <setting name="path" value="patmat.HuffmanSuite" />
@@ -195,6 +181,20 @@
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
       <setting name="testName" value="combine of some leaf list" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="HuffmanSuite.decode testing" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="root" />
+      <setting name="path" value="patmat.HuffmanSuite" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="decode testing" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <envs />
@@ -377,19 +377,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.chars of a larger tree" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.string2chars(&quot;hello, world&quot;)" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.test times" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.makeOrderedLeafList for some frequency table" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.combine of some leaf list" />
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.string2chars(&quot;hello, world&quot;)" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.test times" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.makeOrderedLeafList for some frequency table" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.combine of some leaf list" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.decode testing" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.combine of some leaf list" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.makeOrderedLeafList for some frequency table" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.test times" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.string2chars(&quot;hello, world&quot;)" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.chars of a larger tree" />
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.decode testing" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.combine of some leaf list" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.makeOrderedLeafList for some frequency table" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.test times" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.HuffmanSuite.string2chars(&quot;hello, world&quot;)" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -452,21 +452,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HuffmanSuite_combine_of_some_leaf_list - 2016.12.11 at 23h 37m 51s.xml">
-      <configuration name="HuffmanSuite.combine of some leaf list" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="HuffmanSuite_combine_of_some_leaf_list - 2016.12.11 at 23h 41m 12s.xml">
-      <configuration name="HuffmanSuite.combine of some leaf list" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="HuffmanSuite_combine_of_some_leaf_list - 2016.12.11 at 23h 43m 22s.xml">
-      <configuration name="HuffmanSuite.combine of some leaf list" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="HuffmanSuite_combine_of_some_leaf_list - 2016.12.11 at 23h 43m 57s.xml">
-      <configuration name="HuffmanSuite.combine of some leaf list" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="HuffmanSuite_combine_of_some_leaf_list - 2016.12.11 at 23h 46m 34s.xml">
-      <configuration name="HuffmanSuite.combine of some leaf list" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="HuffmanSuite_combine_of_some_leaf_list - 2016.12.11 at 23h 47m 32s.xml">
       <configuration name="HuffmanSuite.combine of some leaf list" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
@@ -479,8 +464,23 @@
     <history-entry file="HuffmanSuite_combine_of_some_leaf_list - 2016.12.11 at 23h 51m 23s.xml">
       <configuration name="HuffmanSuite.combine of some leaf list" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="HuffmanSuite_makeOrderedLeafList_for_some_frequency_table - 2016.12.11 at 22h 11m 25s.xml">
-      <configuration name="HuffmanSuite.makeOrderedLeafList for some frequency table" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="HuffmanSuite_decode_testing - 2016.12.12 at 01h 44m 11s.xml">
+      <configuration name="HuffmanSuite.decode testing" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite_decode_testing - 2016.12.12 at 01h 47m 46s.xml">
+      <configuration name="HuffmanSuite.decode testing" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite_decode_testing - 2016.12.12 at 01h 49m 14s.xml">
+      <configuration name="HuffmanSuite.decode testing" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite_decode_testing - 2016.12.12 at 01h 50m 42s.xml">
+      <configuration name="HuffmanSuite.decode testing" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite_decode_testing - 2016.12.12 at 01h 54m 26s.xml">
+      <configuration name="HuffmanSuite.decode testing" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="HuffmanSuite_decode_testing - 2016.12.12 at 02h 03m 00s.xml">
+      <configuration name="HuffmanSuite.decode testing" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -502,7 +502,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24743778" sideWeight="0.49061033" order="0" side_tool="false" content_ui="combo" />
@@ -557,18 +557,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="188" column="112" selection-start-line="188" selection-start-column="112" selection-end-line="188" selection-end-column="112" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/patmat/Huffman.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/patmat/HuffmanSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="173" column="12" selection-start-line="173" selection-start-column="12" selection-end-line="173" selection-end-column="12" />
+        <state relative-caret-position="368">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
           <folding />
         </state>
       </provider>
