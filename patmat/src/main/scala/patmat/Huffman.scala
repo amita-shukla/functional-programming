@@ -193,7 +193,7 @@ object Huffman {
       }
     }
     val finalList = auxDecode(tree,bits, List())
-    println(finalList)
+    //println(finalList)
     finalList
   }
 
@@ -222,7 +222,13 @@ object Huffman {
     * This function encodes `text` using the code tree `tree`
     * into a sequence of bits.
     */
-  def encode(tree: CodeTree)(text: List[Char]): List[Bit] = ???
+  def encode(tree: CodeTree)(text: List[Char]): List[Bit] = {
+    def encodeChar(partialTree : CodeTree, c : Char, partialBitList : List[Bit]) : List[Bit] = partialTree match {
+      case Leaf(char,weight) => partialBitList
+      case Fork(left,right,cs,weight) => if(chars(left) contains c) {encodeChar(left,c,partialBitList ::: List(0))}else{encodeChar(right,c,partialBitList ::: List(1))}
+    }
+    text.flatMap(c => encodeChar(tree,c,List():List[Bit]))
+  }
 
   // Part 4b: Encoding using code table
 
