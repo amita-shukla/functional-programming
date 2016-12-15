@@ -127,11 +127,10 @@ object Huffman {
       trees
     else {
       val fork: Fork = makeCodeTree(trees.head, trees.tail.head)
-      val newList: List[CodeTree] = trees.drop(2).sortWith(weight(_) < weight(_))
-
+      val newList: List[CodeTree] = trees.drop(2)
       val finalList: List[CodeTree] = fork :: newList
 
-      finalList
+      finalList.sortWith(weight(_) < weight(_))
     }
   }
 
@@ -188,7 +187,6 @@ object Huffman {
       }
     }
     val finalList = auxDecode(tree, bits, List())
-    //println(finalList)
     finalList
   }
 
