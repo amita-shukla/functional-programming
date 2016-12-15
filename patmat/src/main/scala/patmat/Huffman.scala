@@ -123,19 +123,16 @@ object Huffman {
     * unchanged.
     */
   def combine(trees: List[CodeTree]): List[CodeTree] = {
-    if (trees.size <= 2)
-      return trees
-    //    trees.foreach(x =>
-    //      println(weight(x)))
-    //    println("tree1 : "+weight(trees.head))
-    //    println("tree2 : "+weight(trees.tail.head))
-    val fork: Fork = makeCodeTree(trees.head, trees.tail.head)
-    val newList: List[CodeTree] = trees.drop(2)
-    //    println("new List : " + newList)
-    //    println("fork : " + fork)
-    val finalList: List[CodeTree] = fork :: newList
-    //println("finalList : "+ finalList)
-    finalList
+    if (trees.size < 2)
+      trees
+    else {
+      val fork: Fork = makeCodeTree(trees.head, trees.tail.head)
+      val newList: List[CodeTree] = trees.drop(2).sortWith(weight(_) < weight(_))
+
+      val finalList: List[CodeTree] = fork :: newList
+
+      finalList
+    }
   }
 
 
@@ -168,7 +165,7 @@ object Huffman {
     * frequencies from that text and creates a code tree based on them.
     */
   def createCodeTree(chars: List[Char]): CodeTree = {
-    val codeTree: CodeTree = until(singleton, combine)(makeOrderedLeafList(times(chars))).head
+    val codeTree: CodeTree = until(singleton, combine)(makeOrderedLeafList(times(chars)))(0)
     codeTree
   }
 
@@ -204,7 +201,7 @@ object Huffman {
 
   /**
     * What does the secret message say? Can you decode it?
-    * For the decoding use the `frenchCode' Huffman tree defined above.
+    * For the decoding use the 'frenchCode' Huffman tree defined above.
     **/
   val secret: List[Bit] = List(0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1)
 
