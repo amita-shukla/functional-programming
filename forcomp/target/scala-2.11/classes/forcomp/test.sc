@@ -6,11 +6,16 @@ val sentence : List[String] = List("aaa","bbc","cdc","cbc")
 
 sentence.mkString("")
 
-val dictionary : List[String] = List("aaa","bbc","cdc","cbc")
+val dictionary : List[String] = List("aaa","bbc","cdc","bCb")
 
 def wordOccurrences (word:String) :  List[(Char,Int)] = word.toLowerCase().groupBy(c=> c).mapValues(s=>s.length).toList.sortBy(_._1)
 
-dictionary.groupBy(w:String => wordOccrrences)
+wordOccurrences("aba")
+
+dictionary.groupBy( (w:String) => wordOccurrences(w))
+
+
+
 
 
 
