@@ -29,21 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Anagrams.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Anagrams.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/forcomp/Anagrams.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnagramsSuite.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AnagramsSuite.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/forcomp/AnagramsSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="323">
+              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -52,8 +52,8 @@
       <file leaf-file-name="test.sc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/forcomp/test.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="53" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="53" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,35 +125,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="ScalaTest.AnagramsSuite.dictionaryByOccurrences.get: eat">
-    <configuration default="false" name="AnagramsSuite.wordOccurrences: Robert" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="root" />
-      <setting name="path" value="forcomp.AnagramsSuite" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="wordOccurrences: Robert" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="AnagramsSuite.sentenceOccurrences: abcd e" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="root" />
-      <setting name="path" value="forcomp.AnagramsSuite" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="sentenceOccurrences: abcd e" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="ScalaTest.AnagramsSuite.word anagrams: player">
     <configuration default="false" name="AnagramsSuite.sentenceOccurrences: abcd a" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="root" />
       <setting name="path" value="forcomp.AnagramsSuite" />
@@ -191,6 +163,34 @@
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
       <setting name="testName" value="dictionaryByOccurrences.get: eat" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AnagramsSuite.word anagrams: married" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="root" />
+      <setting name="path" value="forcomp.AnagramsSuite" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="word anagrams: married" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AnagramsSuite.word anagrams: player" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="root" />
+      <setting name="path" value="forcomp.AnagramsSuite" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="word anagrams: player" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <envs />
@@ -373,19 +373,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.wordOccurrences: Robert" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd e" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd a" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd ae" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.dictionaryByOccurrences.get: eat" />
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd a" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd ae" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.dictionaryByOccurrences.get: eat" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: married" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: player" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.dictionaryByOccurrences.get: eat" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd ae" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd a" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd e" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.wordOccurrences: Robert" />
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: player" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: married" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.dictionaryByOccurrences.get: eat" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd ae" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd a" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -470,14 +470,14 @@
     <history-entry file="AnagramsSuite_sentenceOccurrences__abcd_e - 2016.12.21 at 05h 33m 44s.xml">
       <configuration name="AnagramsSuite.sentenceOccurrences: abcd e" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="AnagramsSuite_wordOccurrences__Robert - 2016.12.21 at 05h 17m 43s.xml">
-      <configuration name="AnagramsSuite.wordOccurrences: Robert" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="AnagramsSuite_wordOccurrences__Robert - 2016.12.21 at 05h 20m 26s.xml">
       <configuration name="AnagramsSuite.wordOccurrences: Robert" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="AnagramsSuite_wordOccurrences__abcd - 2016.12.21 at 05h 17m 31s.xml">
-      <configuration name="AnagramsSuite.wordOccurrences: abcd" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="AnagramsSuite_word_anagrams__married - 2016.12.21 at 07h 06m 53s.xml">
+      <configuration name="AnagramsSuite.word anagrams: married" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="AnagramsSuite_word_anagrams__player - 2016.12.21 at 07h 07m 11s.xml">
+      <configuration name="AnagramsSuite.word anagrams: player" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -552,24 +552,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/forcomp/test.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/forcomp/AnagramsSuite.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/forcomp/Anagrams.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/forcomp/AnagramsSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
           <folding />
         </state>
       </provider>
