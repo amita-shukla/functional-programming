@@ -29,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Anagrams.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Anagrams.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/forcomp/Anagrams.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1989">
-              <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="120" column="92" selection-start-line="120" selection-start-column="92" selection-end-line="120" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -42,18 +42,18 @@
       <file leaf-file-name="AnagramsSuite.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/forcomp/AnagramsSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+            <state relative-caret-position="79">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.sc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.sc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/forcomp/test.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+            <state relative-caret-position="164">
+              <caret line="27" column="83" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -77,8 +77,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/scala/forcomp/AnagramsSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/forcomp/Anagrams.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/forcomp/test.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/forcomp/Anagrams.scala" />
       </list>
     </option>
   </component>
@@ -126,21 +126,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="ScalaTest.AnagramsSuite.combinations: abba">
-    <configuration default="false" name="AnagramsSuite.sentenceOccurrences: abcd ae" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="root" />
-      <setting name="path" value="forcomp.AnagramsSuite" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="sentenceOccurrences: abcd ae" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="ScalaTest.AnagramsSuite.subtract: lard - r">
     <configuration default="false" name="AnagramsSuite.dictionaryByOccurrences.get: eat" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="root" />
       <setting name="path" value="forcomp.AnagramsSuite" />
@@ -192,6 +178,20 @@
       <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
       <setting name="searchForTest" value="Across module dependencies" />
       <setting name="testName" value="combinations: abba" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AnagramsSuite.subtract: lard - r" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <module name="root" />
+      <setting name="path" value="forcomp.AnagramsSuite" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="subtract: lard - r" />
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <envs />
@@ -374,19 +374,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd ae" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.dictionaryByOccurrences.get: eat" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: married" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: player" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.combinations: abba" />
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.dictionaryByOccurrences.get: eat" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: married" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: player" />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.combinations: abba" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.subtract: lard - r" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.combinations: abba" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: player" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: married" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.dictionaryByOccurrences.get: eat" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.sentenceOccurrences: abcd ae" />
+        <item index="0" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.subtract: lard - r" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.combinations: abba" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: player" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.word anagrams: married" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.AnagramsSuite.dictionaryByOccurrences.get: eat" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -456,23 +456,23 @@
     <history-entry file="AnagramsSuite_dictionaryByOccurrences_get__eat - 2016.12.21 at 06h 45m 35s.xml">
       <configuration name="AnagramsSuite.dictionaryByOccurrences.get: eat" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="AnagramsSuite_sentenceOccurrences__abcd_a - 2016.12.21 at 05h 34m 17s.xml">
-      <configuration name="AnagramsSuite.sentenceOccurrences: abcd a" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="AnagramsSuite_sentenceOccurrences__abcd_a - 2016.12.21 at 05h 34m 48s.xml">
-      <configuration name="AnagramsSuite.sentenceOccurrences: abcd a" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="AnagramsSuite_sentenceOccurrences__abcd_a - 2016.12.21 at 05h 35m 18s.xml">
-      <configuration name="AnagramsSuite.sentenceOccurrences: abcd a" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="AnagramsSuite_sentenceOccurrences__abcd_ae - 2016.12.21 at 05h 35m 36s.xml">
       <configuration name="AnagramsSuite.sentenceOccurrences: abcd ae" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
     <history-entry file="AnagramsSuite_sentenceOccurrences__abcd_ae - 2016.12.21 at 05h 54m 41s.xml">
       <configuration name="AnagramsSuite.sentenceOccurrences: abcd ae" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="AnagramsSuite_sentenceOccurrences__abcd_e - 2016.12.21 at 05h 33m 44s.xml">
-      <configuration name="AnagramsSuite.sentenceOccurrences: abcd e" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="AnagramsSuite_subtract__lard_-_r - 2016.12.25 at 21h 30m 49s.xml">
+      <configuration name="AnagramsSuite.subtract: lard - r" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="AnagramsSuite_subtract__lard_-_r - 2016.12.25 at 23h 00m 47s.xml">
+      <configuration name="AnagramsSuite.subtract: lard - r" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="AnagramsSuite_subtract__lard_-_r - 2016.12.25 at 23h 00m 59s.xml">
+      <configuration name="AnagramsSuite.subtract: lard - r" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="AnagramsSuite_subtract__lard_-_r - 2016.12.25 at 23h 01m 42s.xml">
+      <configuration name="AnagramsSuite.subtract: lard - r" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
     <history-entry file="AnagramsSuite_word_anagrams__married - 2016.12.21 at 07h 06m 53s.xml">
       <configuration name="AnagramsSuite.word anagrams: married" configurationId="ScalaTestRunConfiguration" />
@@ -486,12 +486,12 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32492113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496329" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -499,7 +499,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -559,26 +559,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/forcomp/test.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="27" column="83" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/forcomp/AnagramsSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        <state relative-caret-position="79">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/forcomp/Anagrams.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/forcomp/test.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+        <state relative-caret-position="255">
+          <caret line="120" column="92" selection-start-line="120" selection-start-column="92" selection-end-line="120" selection-end-column="92" />
           <folding />
         </state>
       </provider>

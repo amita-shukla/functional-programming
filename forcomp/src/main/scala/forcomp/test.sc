@@ -23,6 +23,10 @@ val c = y.toMap
 
 val d = y.foldLeft(SortedMap[Char,Int]())((a,b) => a.+(b._1 -> b._2))
 
+x.map{case (c ,i) => (c,i+1)}
+
+x.map{case (c ,i) => if(d.contains(c)) (c,i - d(c)) else (c,i)}.filter(p=> p._2!=0)
+
 
 type Occurrences = List[(Char,Integer)]
 //def subtract(x : Occurrences, y : Occurrences) : Occurrences = {

@@ -1,5 +1,7 @@
 package forcomp
 
+import scala.collection.immutable.SortedMap
+
 
 object Anagrams {
 
@@ -115,7 +117,9 @@ object Anagrams {
     * and has no zero-entries.
     */
   def subtract(x: Occurrences, y: Occurrences): Occurrences = {
-
+    val d = y.foldLeft(SortedMap[Char,Int]())((a, b) => a.+(b._1 -> b._2))
+    val z = x.map{case (c ,i) => if(d.contains(c)) (c,i - d(c)) else (c,i)}.filter(p=> p._2>0)
+    z
   }
 
   /** Returns a list of all anagram sentences of the given sentence.
