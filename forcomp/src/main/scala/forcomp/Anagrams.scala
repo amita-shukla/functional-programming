@@ -129,7 +129,7 @@ object Anagrams {
     * such that the words have to be from the dictionary.
     *
     * The number of words in the sentence and its anagrams does not have to correspond.
-    * For example, the sentence `List("I", "love", "you")` is an anagram of the sentence `List("You", "olive")`.
+     * For example, the sentence `List("I", "love", "you")` is an anagram of the sentence `List("You", "olive")`.
     *
     * Also, two sentences with the same words but in a different order are considered two different anagrams.
     * For example, sentences `List("You", "olive")` and `List("olive", "you")` are different anagrams of
@@ -162,5 +162,18 @@ object Anagrams {
     *
     * Note: There is only one anagram of an empty sentence.
     */
-  def sentenceAnagrams(sentence: Sentence): List[Sentence] = ???
+  def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
+    def sentenceRecur(occurrences: Occurrences) : List[Sentence] = {
+      if (occurrences.isEmpty) List(Nil)
+      else {
+        for {
+          comb <- combinations(occurrences)
+          word <- dictionaryByOccurrences.getOrElse(comb,Nil)
+          partial <- sentenceRecur(subtract(occurrences,wordOccurrences(word)))
+          if !comb.isEmpty
+        } yield word :: partial
+      }
+    }
+    sentenceRecur(sentenceOccurrences(sentence))
+  }
 }
