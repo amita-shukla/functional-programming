@@ -3,6 +3,10 @@
   * 2. Using a lot of pattern matching in the subsequent function
   * Remember : The compiler generates a lot of code under the hood if pattern matching is used for booleans.
   * For booleans, plane old if-else is still more efficient.
+  * 3. In functions such as 'add' or 'concat, element/list os prepended intead of appended.
+  * This is being done on purpose, as they imitate the functions '::' and ':::' respectively.
+  * These functions are right associative, and hence prepending makes more sense
+  * e.g. 1 :: List(2,3,4) = List(1,2,3,4) instead of List(2,3,4,1)
   */
 
 object MyEmptyList extends MyList[Nothing]{
@@ -39,6 +43,9 @@ abstract class MyList[+A] {
     case MyNonEmptyList(head,tail) => tail.last
   }
 
+  /**
+    A list with all elements except the last one
+    */
   def init[B>:A] : MyList[B] = this match {
     case MyEmptyList => throw new Error("Init of an empty list")
     case MyNonEmptyList(head,MyEmptyList) => MyEmptyList
@@ -59,7 +66,7 @@ abstract class MyList[+A] {
     else /*tail.concat(that).add(head)*/ this.concat(that.tail).add(that.head)
   }
 
-  def map[B>:A](f : A => B) : MyList[B] = if (isEmpty) MyEmptyList else tail.map(f).add(head)
+  def map[B>:A](f : A => B) : MyList[B] = if (isEmpty) this else tail.map(f).add(f(head))
 
   def insert[B>:A](element: B, list: MyList[B])(implicit ordering : Ordering[B]): MyList[B] = list match {
     case MyEmptyList => MyNonEmptyList(element,MyEmptyList)
@@ -95,6 +102,8 @@ c.tail.init
 val d = MyNonEmptyList(3,MyEmptyList)
 val e = d.add(4)
 val concatenated = c.concat(e)
+//checking map
+val f = concatenated.map(x => x+1)
 //checking sorting
 val sorted = c.iSort
 val lastOfSorted = sorted.last
