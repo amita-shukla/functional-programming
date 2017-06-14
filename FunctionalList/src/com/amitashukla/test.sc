@@ -24,10 +24,19 @@ abstract class MyList[+A] {
     if(isEmpty) 0 else 1 + tail.length
   }
 
+  /**
+    * O(n) : n is number of elements
+    * @return
+    */
   def last : A = this match {
     case MyEmptyList => throw new Error("Last of an empty list")
     case MyNonEmptyList(head,MyEmptyList) => head
     case MyNonEmptyList(head,tail) => tail.last
+  }
+
+  def init[B>:A] : MyList[B] = this match {
+    case MyEmptyList => throw new Error("Init of an empty list")
+    case MyNonEmptyList(head,MyEmptyList) => ???
   }
 
   def insert[B>:A](element: B, list: MyList[B])(implicit ordering : Ordering[B]): MyList[B] = list match {
