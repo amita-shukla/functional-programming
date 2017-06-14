@@ -36,7 +36,8 @@ abstract class MyList[+A] {
 
   def init[B>:A] : MyList[B] = this match {
     case MyEmptyList => throw new Error("Init of an empty list")
-    case MyNonEmptyList(head,MyEmptyList) => ???
+    case MyNonEmptyList(head,MyEmptyList) => MyEmptyList
+    case MyNonEmptyList(head,tail) => MyNonEmptyList(head,tail.init)
   }
 
   def insert[B>:A](element: B, list: MyList[B])(implicit ordering : Ordering[B]): MyList[B] = list match {
@@ -66,9 +67,14 @@ val c = list.add(2)
 //checking last
 val last = c.last
 //c.tail.tail.last   //this throws an error
+//checking init
+val init = c.init
+c.tail.init
+//c.tail.tail.init //this throws an error
 //checking sorting
 val sorted = c.iSort
 val lastOfSorted = sorted.last
+val initOfSorted = sorted.init
 //checking pattern matching...
 val matched = list match {
   case MyNonEmptyList(1,MyEmptyList) => "wow"
