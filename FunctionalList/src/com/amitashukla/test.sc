@@ -46,12 +46,20 @@ abstract class MyList[+A] {
   }
 
   /**
-    * Append the elements of given list after this list
+    * Append the elements of given list before this list
     */
-  def concat[B>:A](that : MyList[B]) : MyList[B] = this match {
+
+  /*def concat[B>:A](that : MyList[B]) : MyList[B] = this match {
     case MyEmptyList => that
     case MyNonEmptyList(head,tail) => tail.concat(that).add(head)
+  }*/
+
+  def concat[B>:A](that : MyList[B]) : MyList[B] = {
+    if(that.isEmpty) this
+    else /*tail.concat(that).add(head)*/ this.concat(that.tail).add(that.head)
   }
+
+  def map[B>:A](f : A => B) : MyList[B] = if (isEmpty) MyEmptyList else tail.map(f).add(head)
 
   def insert[B>:A](element: B, list: MyList[B])(implicit ordering : Ordering[B]): MyList[B] = list match {
     case MyEmptyList => MyNonEmptyList(element,MyEmptyList)
