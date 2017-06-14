@@ -1,4 +1,9 @@
-//it is necessary to define the classes/objects before the list to avoid "wrong forward reference" error
+/** Notes :
+  * 1. It is necessary to define the classes/objects before the list to avoid "wrong forward reference" error
+  * 2. Using a lot of pattern matching in the subsequent function
+  * Remember : The compiler generates a lot of code under the hood if pattern matching is used for booleans.
+  * For booleans, plane old if-else is still more efficient.
+  */
 
 object MyEmptyList extends MyList[Nothing]{
   override def head: Nothing = throw new NoSuchElementException("Head of an Empty list : ")
@@ -40,6 +45,14 @@ abstract class MyList[+A] {
     case MyNonEmptyList(head,tail) => MyNonEmptyList(head,tail.init)
   }
 
+  /**
+    * Append the elements of given list after this list
+    */
+  def concat[B>:A](that : MyList[B]) : MyList[B] = this match {
+    case MyEmptyList => that
+    case MyNonEmptyList(head,tail) => tail.concat(that).add(head)
+  }
+
   def insert[B>:A](element: B, list: MyList[B])(implicit ordering : Ordering[B]): MyList[B] = list match {
     case MyEmptyList => MyNonEmptyList(element,MyEmptyList)
     case MyNonEmptyList(head,tail) =>
@@ -54,7 +67,6 @@ abstract class MyList[+A] {
     case MyNonEmptyList(head,tail) =>  insert(head,tail.iSort(ordering))(ordering)
   }
 }
-
 
 //checking initialization
 val list = MyNonEmptyList(1,MyEmptyList)
@@ -71,6 +83,10 @@ val last = c.last
 val init = c.init
 c.tail.init
 //c.tail.tail.init //this throws an error
+//checking concat
+val d = MyNonEmptyList(3,MyEmptyList)
+val e = d.add(4)
+val concatenated = c.concat(e)
 //checking sorting
 val sorted = c.iSort
 val lastOfSorted = sorted.last
@@ -89,4 +105,5 @@ val animals = dogs.add(new Cat())
 animals.tail.toString
 //checking length
 animals.length
+
 
