@@ -24,35 +24,54 @@ abstract class MyList[+A] {
     if(isEmpty) 0 else 1 + tail.length
   }
 
-  def insert[B>:A](element: B, list: MyList[B]): MyList[B] = list match {
-    case MyEmptyList => MyNonEmptyList(element,MyEmptyList)
-    case MyNonEmptyList(head,tail) =>  if(element <= head) list.add(element) else insert(element,tail).add(head)
+  def last : A = this match {
+    case MyEmptyList => throw new Error("Last of an empty list")
+    case MyNonEmptyList(head,MyEmptyList) => head
+    case MyNonEmptyList(head,tail) => tail.last
   }
 
-  def iSort[B>:A](xs : MyList[B]) : MyList[B] = xs match {
+  def insert[B>:A](element: B, list: MyList[B])(implicit ordering : Ordering[B]): MyList[B] = list match {
+    case MyEmptyList => MyNonEmptyList(element,MyEmptyList)
+    case MyNonEmptyList(head,tail) =>
+      if(ordering.lt(element, head))
+        list.add(element)
+      else
+        insert(element,tail)(ordering).add(head)
+  }
+
+  def iSort[B>:A](implicit ordering: Ordering[B]) : MyList[B] = this match {
     case MyEmptyList => MyEmptyList
-    case MyNonEmptyList(head,tail) =>  insert(head,iSort(tail))
+    case MyNonEmptyList(head,tail) =>  insert(head,tail.iSort(ordering))(ordering)
   }
 }
 
 
-
+//checking initialization
 val list = MyNonEmptyList(1,MyEmptyList)
+//checking head
 val b = list.head
+//checking tail
 list.tail
-list.add(2)
-list match {
+//checking add
+val c = list.add(2)
+//checking last
+val last = c.last
+//c.tail.tail.last   //this throws an error
+//checking sorting
+val sorted = c.iSort
+val lastOfSorted = sorted.last
+//checking pattern matching...
+val matched = list match {
   case MyNonEmptyList(1,MyEmptyList) => "wow"
 }
-/**
-  * Checking the behaviour of add (B:>A)
-  */
+// Checking the behaviour of add (B:>A)
 abstract class Animal
 class Dog extends Animal
 class Cat extends Animal
-
 val dogs = MyNonEmptyList(new Dog(), MyEmptyList)
 val animals = dogs.add(new Cat())
+//checking to String
 animals.tail.toString
+//checking length
 animals.length
 
