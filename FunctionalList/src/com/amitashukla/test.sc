@@ -68,6 +68,15 @@ abstract class MyList[+A] {
 
   def map[B>:A](f : A => B) : MyList[B] = if (isEmpty) this else tail.map(f).add(f(head))
 
+  def foldLeft[B](start : B)(f : (B,A)=> B) : B = {
+    if (isEmpty){
+      start
+    } else{
+      val current = f(start,this.head)
+      this.tail.foldLeft(current)(f)
+    }
+  }
+
   def insert[B>:A](element: B, list: MyList[B])(implicit ordering : Ordering[B]): MyList[B] = list match {
     case MyEmptyList => MyNonEmptyList(element,MyEmptyList)
     case MyNonEmptyList(head,tail) =>
