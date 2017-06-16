@@ -77,6 +77,14 @@ abstract class MyList[+A] {
     }
   }
 
+  def filter[B>:A](f:A=>Boolean) : MyList[B] = {
+    if(isEmpty) this
+    else {
+      if (f(head)) MyNonEmptyList(head, tail.filter(f))
+      else tail.filter(f)
+    }
+  }
+
   def insert[B>:A](element: B, list: MyList[B])(implicit ordering : Ordering[B]): MyList[B] = list match {
     case MyEmptyList => MyNonEmptyList(element,MyEmptyList)
     case MyNonEmptyList(head,tail) =>
@@ -113,6 +121,8 @@ val e = d.add(4)
 val concatenated = c.concat(e)
 //checking map
 val f = concatenated.map(x => x+1)
+//checking filter
+val filtered = f.filter(x=>x%2==0) 
 //checking sorting
 val sorted = c.iSort
 val lastOfSorted = sorted.last
